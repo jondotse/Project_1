@@ -17,3 +17,28 @@ while True:
     print("5. Exit")
 
     user_input = int(input("Enter your choice: "))
+
+    # Initializing if statements
+
+    if user_input == 1:
+        name = str(input("Enter name: "))
+        phone_number = str(input("Enter phone number: "))
+
+        contact_list[name] = phone_number
+
+        print("Contact added successfully.")
+
+    elif user_input == 2:
+        pass
+    
+    elif user_input == 3:
+        pass
+
+    elif user_input == 4:
+        pass
+
+    elif user_input == 5:
+        break
+
+    else:
+        print("Input not valid")
