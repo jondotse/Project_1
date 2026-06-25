@@ -29,7 +29,12 @@ while True:
         print("Contact added successfully.")
 
     elif user_input == 2:
-        pass
+        name = str(input("Enter name to search the contact"))
+        if name in contact_list:
+            print(name + ": " + contact_list[name])
+
+        else:
+            print("Contact not found.")
     
     elif user_input == 3:
         pass
