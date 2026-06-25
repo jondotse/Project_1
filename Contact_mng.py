@@ -16,31 +16,51 @@ while True:
     print("4. Delete Contact")
     print("5. Exit")
 
-    user_input = int(input("Enter your choice: "))
+    try:
+        user_input = int(input("Enter your choice: "))
+
+    except ValueError:
+        print("Please enter a number.")
+
+        continue
 
     # Initializing if statements
 
     if user_input == 1:
-        name = str(input("Enter name: "))
-        phone_number = str(input("Enter phone number: "))
+        name = input("Enter name: ")
+        phone_number = input("Enter phone number: ")
 
         contact_list[name] = phone_number
 
         print("Contact added successfully.")
 
     elif user_input == 2:
-        name = str(input("Enter name to search the contact"))
+        name = input("Enter name to search the contact.")
         if name in contact_list:
             print(name + ": " + contact_list[name])
 
         else:
             print("Contact not found.")
     
+    
     elif user_input == 3:
-        pass
+        if contact_list:
+            print("---- All Contacts ----")
+            for name in contact_list:
+                print(name + ": " + contact_list[name])
+
+        else:
+            print("No contact found.")
 
     elif user_input == 4:
-        pass
+        name = input("Enter name to delete contact.")
+        if name in contact_list:
+            del contact_list[name]
+
+            print("Contact is successfully deleted.")
+
+        else:
+            print("This contact does not exist.")
 
     elif user_input == 5:
         break
