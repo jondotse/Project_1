@@ -27,7 +27,7 @@ while True:
     # Initializing if statements
 
     if user_input == 1:
-        name = input("Enter name: ")
+        name.title() = input("Enter name: ")
         phone_number = input("Enter phone number: ")
 
         contact_list[name] = phone_number
