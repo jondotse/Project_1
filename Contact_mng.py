@@ -50,7 +50,7 @@ while True:
                 print(name + ": " + contact_list[name])
 
         else:
-            print("No contact found.")
+            print("No contact found.\n")
 
     elif user_input == 4:
         name = input("Enter name to delete contact.")
@@ -60,10 +60,10 @@ while True:
             print("Contact is successfully deleted.")
 
         else:
-            print("This contact does not exist.")
+            print("This contact does not exist.\n")
 
     elif user_input == 5:
         break
 
     else:
-        print("Input not valid")
+        print("Input not valid\n")
