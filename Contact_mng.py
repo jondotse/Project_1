@@ -1,11 +1,12 @@
-# Creating a program that lets a user manage a list of contacts through a menu
-# Add, searc, view, and delete contacts by name
-# Jonathan Dotse, 06/22/26
-
+# Initializing while loop
+""" Creating a program that lets a user manage a list of contacts through a menu
+Add, searc, view, and delete contacts by name
+Jonathan Dotse, 06/22/26
+"""
 # Initializing dictionary to hold contacts
 contact_list = {}
 
-# Initializing while loop
+
 
 while True:
     print("Contact Manager")
@@ -27,7 +28,7 @@ while True:
     # Initializing if statements
 
     if user_input == 1:
-        name.title() = input("Enter name: ")
+        name = input("Enter name: ").title()
         phone_number = input("Enter phone number: ")
 
         contact_list[name] = phone_number
@@ -63,6 +64,7 @@ while True:
             print("This contact does not exist.\n")
 
     elif user_input == 5:
+        print("Goodbye.")
         break
 
     else:
